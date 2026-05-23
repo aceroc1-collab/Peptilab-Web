@@ -57,13 +57,13 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 text-center max-w-5xl px-8">
         <motion.p
-          className="text-[0.6rem] tracking-[0.5rem] mb-8 font-josefin"
+          className="text-[0.55rem] tracking-[0.5rem] mb-8 font-josefin"
           style={{ color: 'var(--gold)' }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          PEPTILAB.VE — FOR RESEARCH USE ONLY
+          PEPTILAB.VE
         </motion.p>
 
         <motion.h1
@@ -120,6 +120,17 @@ export default function Hero() {
             NUESTRA CIENCIA
           </button>
         </motion.div>
+
+        {/* Subtle disclaimer */}
+        <motion.p
+          className="font-josefin tracking-[0.3rem] mt-8"
+          style={{ fontSize: '0.42rem', color: 'rgba(90,88,86,0.5)', letterSpacing: '0.25rem' }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1.2 }}
+        >
+          FOR RESEARCH USE ONLY
+        </motion.p>
       </div>
 
       {/* Scroll indicator */}
@@ -133,3 +144,4 @@ export default function Hero() {
     </section>
   );
 }
+
