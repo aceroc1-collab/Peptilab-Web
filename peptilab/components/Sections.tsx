@@ -1,4 +1,4 @@
-'use client';
+use client';
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
@@ -346,6 +346,9 @@ export function Footer() {
         <p className="text-[0.5rem] tracking-[0.2rem] font-josefin" style={{ color: 'var(--text-muted)' }}>
           © 2024 PEPTILAB.VE — TODOS LOS DERECHOS RESERVADOS
         </p>
+        <p className="text-[0.45rem] tracking-[0.3rem] font-josefin" style={{ color: 'rgba(90,88,86,0.6)' }}>
+          FOR RESEARCH USE ONLY
+        </p>
         <p className="text-[0.5rem] tracking-[0.2rem] font-josefin" style={{ color: 'var(--text-muted)' }}>
           CARACAS, VENEZUELA
         </p>
@@ -353,3 +356,5 @@ export function Footer() {
     </footer>
   );
 }
+
+       
