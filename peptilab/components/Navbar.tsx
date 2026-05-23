@@ -30,7 +30,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 md:px-16 py-4 transition-all duration-500"
+      className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 md:px-16 py-3 transition-all duration-500"
       style={{
         background: scrolled
           ? 'rgba(5,5,7,0.98)'
@@ -46,10 +46,15 @@ export default function Navbar() {
         <Image
           src="/logo.jpg"
           alt="PEPTILAB"
-          width={120}
-          height={120}
-          className="object-contain"
-          style={{ height: '64px', width: 'auto' }}
+          width={200}
+          height={200}
+          className="object-contain transition-all duration-300"
+          style={{
+            height: '90px',
+            width: 'auto',
+            filter: 'brightness(1.25) contrast(1.1) drop-shadow(0 0 12px rgba(184,160,106,0.25))',
+            mixBlendMode: 'lighten',
+          }}
           priority
         />
       </div>
